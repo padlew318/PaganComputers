@@ -36,5 +36,18 @@ namespace PaganComputers.Controllers
             return View();
         }
 
+        public ActionResult CommandLine()
+        {
+            ViewBag.Message = "Command Line.";
+
+            return View();
+        }
+
+        public ActionResult Permissions()
+        {
+            ViewBag.Message = "Permissions.";
+
+            return View();
+        }
     }
 }

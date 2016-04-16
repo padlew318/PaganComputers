@@ -272,6 +272,8 @@
     <Content Include="Views\Tutorials\Git.cshtml" />
     <Content Include="Views\Tutorials\VM.cshtml" />
     <Content Include="Views\Tutorials\Linux.cshtml" />
+    <Content Include="Views\Tutorials\CommandLine.cshtml" />
+    <Content Include="Views\Tutorials\Permissions.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
