@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<div class="page-header">
+    <h1>Virtual machines</h1>
+</div>
+
+<div class="container marketing">
+    <!-- START THE FEATURETTES -->
+    <div class="row featurette">
+        <div class="col-md-12">
+            <h2 class="featurette-heading">Virtual machine <span class="text-muted">set up.</span></h2>
+            <p>
+                Virtual machines are a good way to set up a local web server on your machine to develop applications and websites.
+                This covers setting up a virtual machine on a Mac but could be tailored for any machine.
+            </p>
+            <h3>Prerequisites</h3>
+            <p> The following software must be installed before we start.</p>
+            <ul>
+                <li><a href="https://www.vagrantup.com/">Vagrant</a></li>
+                <li><a href="https://www.virtualbox.org/">Virtualbox</a></li>
+                <li><a href="https://dev.mysql.com/downloads/workbench/">MySQLWorkbench</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-12">
+            <h2 class="featurette-heading">Set up puPHPet file</h2>
+            <p>Visit <a href="https://dev.mysql.com/downloads/workbench/">MySQLWorkbench</a> and create a creation script for your vm.</p>
+        </div>
+    </div>
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-12">
+            <h2 class="featurette-heading">Set up hosts file on mac</h2>
+            <p><code>sudo nano /etc/hosts</code></p>
+            <p>Add the ip address you set in the puPHPet file, and the server name.<br><code>192.168.56.101 vm1.dev www.vm1.dev</code></p>
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    <!-- /END THE FEATURETTES -->
+</div>
