@@ -1,7 +1,7 @@
 ﻿body {
    /* padding-top: 50px; */
     padding-bottom: 20px;
-    background-color: #E9EAD3;
+    background-color: whitesmoke;
    /* Margin bottom by footer height */
   margin-bottom: 150px;
 }
@@ -26,9 +26,11 @@ textarea {
     max-width: 280px;
 }
 
-* {
+/* 
+    *{
   font-family: 'Open Sans', sans-serif;
 }
+    */
 h1,
 h2,
 h3,
@@ -47,6 +49,12 @@ h3,
 h4 {
   color: #2c9ace;
   font-size: 16px;
+}
+.navbar-inverse .navbar-brand{
+  text-transform: uppercase;
+  display: block;
+  font-size: 0.9em;
+  letter-spacing: 0.3em;
 }
 .pagetitle h1 {
     margin-top: 5px;
@@ -70,31 +78,13 @@ h4 {
   width: 30px;
   padding: 0.4em;
   vertical-align: middle;
-  border: 1px solid #627e9d;
-  color: #627e9d;
+  border: 1px solid #E9EAD3;
+  color: #E9EAD3;
 }
 .socialLinks li a:hover,
 .socialLinks li a:focus {
-  border: 1px solid #668bb2;
+  border: 1px solid #E9EAD3;
 }
-.topper {
-  background: #E9EAD3;
-  color: #37608F;
-  position: relative;
-  overflow: visible;
-}
-.topper h1 {
-  color: #37608F;
-      text-transform: uppercase;
-    display: block;
-    font-size: 1.1em;
-    letter-spacing: 0.3em;
-}
-.topper a:hover,
-.topper a:focus {
-  text-decoration: none;
-}
-
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -204,34 +194,7 @@ footer a:focus {
 
 /* Custom page CSS
 -------------------------------------------------- */
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: whitesmoke;
-}
-.navbar-default .navbar-brand {
-  color: whitesmoke;
-  font-size: 14px;
-  
-}
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-  color: whitesmoke;
-  background-color: #37608F;
-}
-.navbar-default .navbar-text {
-  color: #777;
-}
-.navbar-default {
-    background: #5391AA;
-    color: whitesmoke;
-}
-.navbar-default .navbar-nav > li > a {
-  color: whitesmoke;
-}
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: whitesmoke;
-  background-color: #37608F;
-}
+
 hr {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -248,7 +211,8 @@ code {
 .wrap {
     width: 320px;
     height: 192px;
-    padding: 0;
+    padding: 5px;
+    border: 1px solid gray;
     overflow: hidden;
 }
 .frame {

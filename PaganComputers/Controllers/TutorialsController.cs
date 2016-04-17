@@ -10,44 +10,31 @@ namespace PaganComputers.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Tutorials.";
-
+            ViewBag.Title = "Tutorials";
+            ViewBag.Message = "Your application description page.";
             return View();
         }
 
         public ActionResult Git()
         {
-            ViewBag.Message = "GIT.";
-
+            ViewBag.Title = "Git.";
+            ViewBag.Message = "Your application description page.";
             return View();
         }
 
         public ActionResult Linux()
         {
-            ViewBag.Message = "Linux.";
-
+            ViewBag.Title = "Linux.";
+            ViewBag.Message = "Your application description page.";
             return View();
         }
 
         public ActionResult VM()
         {
-            ViewBag.Message = "VM.";
-
+            ViewBag.Title = "Virtual machines.";
+            ViewBag.Message = "Your application description page.";
             return View();
         }
 
-        public ActionResult CommandLine()
-        {
-            ViewBag.Message = "Command Line.";
-
-            return View();
-        }
-
-        public ActionResult Permissions()
-        {
-            ViewBag.Message = "Permissions.";
-
-            return View();
-        }
     }
 }

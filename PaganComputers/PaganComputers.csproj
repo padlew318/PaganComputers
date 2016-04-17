@@ -223,6 +223,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\b4tech.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -273,8 +274,6 @@
     <Content Include="Views\Tutorials\Git.cshtml" />
     <Content Include="Views\Tutorials\VM.cshtml" />
     <Content Include="Views\Tutorials\Linux.cshtml" />
-    <Content Include="Views\Tutorials\CommandLine.cshtml" />
-    <Content Include="Views\Tutorials\Permissions.cshtml" />
     <Content Include="Views\More\Index.cshtml" />
     <Content Include="Views\More\DevLinks.cshtml" />
     <Content Include="Views\More\Portfolio.cshtml" />
