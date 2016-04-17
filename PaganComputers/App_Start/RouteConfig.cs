@@ -24,6 +24,12 @@ namespace PaganComputers
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Tutorials", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "More",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "More", action = "Index", id = UrlParameter.Optional }
+            );
         }
     }
 }

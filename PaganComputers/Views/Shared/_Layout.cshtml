@@ -6,10 +6,12 @@
     <title>@ViewBag.Title | Pagan Computers</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,14 +28,19 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Tutorials", "Index", "Tutorials")</li>
-                            <li role="separator" class="divider"></li>
                             <li>@Html.ActionLink("Git", "Git", "Tutorials")</li>
                             <li>@Html.ActionLink("Linux", "Linux", "Tutorials")</li>
                             <li>@Html.ActionLink("Virtual machine", "VM", "Tutorials")</li>
                         </ul>
                     </li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Development links", "DevLinks", "More")</li>
+                            <li>@Html.ActionLink("Portfolio", "Portfolio", "More")</li>
+                        </ul>
+                    </li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -42,74 +49,74 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <div class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-lg-push-4 text-center">
-                            <!-- Regional Name -->
-                            <span class="regional">Pagan Computers</span>
-                            <!-- END Regional Name -->
-                        </div>
-                        <div class="col-lg-2 col-lg-pull-4 col-md-3 col-sm-6">
-                            <span class="title">Are you lost?</span>
-                            <nav>
-                                <ul>
-                                    <li><a href="../home/" title="Home">Home</a></li>
-                                    <li><a href="../services/" title="Hot Tubs">Services</a></li>
-                                    <li><a href="../tutorials/" title="Accessories">Tutorials</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="col-lg-2 col-lg-pull-4 col-md-3 col-sm-6">
-                            <span class="title">Tutorials</span>
-                            <nav>
-                                <ul>
-                                    <li><a href="../tutorials/vm.php" title="Virtual machines">Virtual machines</a></li>
-                                    <li><a href="../tutorials/linux.php" title="Linux">Linux</a></li>
-                                    <li><a href="../tutorials/git.php" title="GIT">GIT</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="clearfix visible-sm-block"></div>
-                        <div class="col-lg-2 col-md-3 col-sm-6">
-                            <span class="title">We're social</span>
-                            <!-- Social Links -->
-                            <ul class="socialLinks">
-                                <li><a href="#" title=""><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#" title=""><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#" title=""><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#" title=""><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#" title=""><i class="fa fa-pinterest"></i></a></li>
-                                <li><a href="#" title=""><i class="fa fa-skype"></i></a></li>
-                                <li><a href="#" title=""><i class="fa fa-whatsapp"></i></a></li>
+    </div>
 
-
-                            </ul>
-                            <!-- END Social Links -->
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-6">
-                            <span class="title">Contact me</span>
-                            <address>
-                                <!-- Regional Showroom Address -->
-                                <p>
-                                    Pagan Computers<br>
-                                    Telephone: 07595987600
-                                </p>
-                                <!-- END Regional Showroom Address -->
-                            </address>
-                        </div>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-push-4 text-center">
+                        <!-- Regional Name -->
+                        <span class="regional">Pagan Computers</span>
+                        <!-- END Regional Name -->
                     </div>
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <p>&copy; @DateTime.Now.Year | Pagan Computers</p>
-                        </div>
+                    <div class="col-lg-2 col-lg-pull-4 col-md-3 col-sm-6">
+                        <span class="title">Are you lost?</span>
+                        <nav>
+                            <ul>
+                                <li><a href="../home/" title="Home">Home</a></li>
+                                <li><a href="../services/" title="Hot Tubs">Services</a></li>
+                                <li><a href="../tutorials/" title="Accessories">Tutorials</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-2 col-lg-pull-4 col-md-3 col-sm-6">
+                        <span class="title">Tutorials</span>
+                        <nav>
+                            <ul>
+                                <li><a href="../tutorials/vm.php" title="Virtual machines">Virtual machines</a></li>
+                                <li><a href="../tutorials/linux.php" title="Linux">Linux</a></li>
+                                <li><a href="Tutorials/Git" title="GIT">Git</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6">
+                        <span class="title">We're social</span>
+                        <!-- Social Links -->
+                        <ul class="socialLinks">
+                            <li><a href="#" title=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" title=""><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" title=""><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" title=""><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#" title=""><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#" title=""><i class="fa fa-skype"></i></a></li>
+                            <li><a href="#" title=""><i class="fa fa-whatsapp"></i></a></li>
+
+
+                        </ul>
+                        <!-- END Social Links -->
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6">
+                        <span class="title">Contact me</span>
+                        <address>
+                            <!-- Regional Showroom Address -->
+                            <p>
+                                Paddy Lewis<br>
+                                Telephone: 07595987600
+                            </p>
+                            <!-- END Regional Showroom Address -->
+                        </address>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p>&copy; @DateTime.Now.Year | Pagan Computers</p>
                     </div>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
