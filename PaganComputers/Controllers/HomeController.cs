@@ -11,21 +11,21 @@ namespace PaganComputers.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = "Home";
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "";
             return View();
         }
 
         public ActionResult About()
         {
             ViewBag.Title = "About";
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "";
             return View();
         }
 
         public ActionResult Contact()
         {
             ViewBag.Title = "Contact me";
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "";
             return View();
         }
     }

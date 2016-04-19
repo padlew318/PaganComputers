@@ -11,22 +11,30 @@ namespace PaganComputers.Controllers
         // GET: More
         public ActionResult Index()
         {
-            ViewBag.Message = "More.";
-
+            ViewBag.Title = "More";
+            ViewBag.Message = "";
             return View();
         }
 
         public ActionResult DevLinks()
         {
-            ViewBag.Message = "Dev Links.";
-
+            ViewBag.Title = "Development Links";
+            ViewBag.Message = "";
             return View();
         }
 
         public ActionResult Portfolio()
         {
-            ViewBag.Message = "Portfolio.";
 
+            ViewBag.Title = "Portfolio";
+            ViewBag.Message = "";
+            return View();
+        }
+
+        public ActionResult VW()
+        {
+            ViewBag.Title = "1972 VW restoration project";
+            ViewBag.Message = "";
             return View();
         }
     }

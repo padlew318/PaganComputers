@@ -277,6 +277,7 @@
     <Content Include="Views\More\Index.cshtml" />
     <Content Include="Views\More\DevLinks.cshtml" />
     <Content Include="Views\More\Portfolio.cshtml" />
+    <Content Include="Views\More\VW.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

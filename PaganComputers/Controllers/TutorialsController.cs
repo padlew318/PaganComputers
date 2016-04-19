@@ -11,28 +11,28 @@ namespace PaganComputers.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = "Tutorials";
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "";
             return View();
         }
 
         public ActionResult Git()
         {
-            ViewBag.Title = "Git.";
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Title = "Git";
+            ViewBag.Message = "";
             return View();
         }
 
         public ActionResult Linux()
         {
-            ViewBag.Title = "Linux.";
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Title = "Linux";
+            ViewBag.Message = "";
             return View();
         }
 
         public ActionResult VM()
         {
-            ViewBag.Title = "Virtual machines.";
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Title = "Virtual machines";
+            ViewBag.Message = "";
             return View();
         }
 
