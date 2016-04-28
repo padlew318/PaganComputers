@@ -38,16 +38,16 @@ h4 {
   font-family: 'Archivo Narrow', sans-serif;
 }
 h1 {
-  color: #EC583A;
+  color: #ff0000;
   font-size: 26px;
 }
 h2 {
-    color: #FF7148;
+    color: #ff0000;
     font-size: 20px;
   }
 h3,
 h4 {
-  color: #EC583A;
+  color: #ff0000;
   font-size: 16px;
 }
 .navbar-inverse .navbar-brand{
@@ -69,12 +69,7 @@ h4 {
   width: 30px;
   padding: 0.4em;
   vertical-align: middle;
-  border: 1px solid #93B1C6;
-  color: #FF7148;
-}
-.socialLinks li a:hover,
-.socialLinks li a:focus {
-  border: 1px solid #EC583A;
+  color: #2e8708;
 }
 
 /* Sticky footer styles
@@ -93,7 +88,7 @@ html {
 @media (max-width: 768px) {
   body {
     /* Margin bottom by footer height */
-  margin-bottom: 400px;
+  margin-bottom: 420px;
   }
 }
 .footer {
@@ -115,7 +110,7 @@ html {
 @media (max-width: 768px) {
   .footer {
     /* Set the fixed height of the footer here */
-  height: 400px;
+  height: 420px;
   }
 }
 footer object {
@@ -152,7 +147,7 @@ footer .regional {
   letter-spacing: 0.3em;
 }
 footer .title {
-  color: #FF7148;
+  color: #ff0000;
   font-family: 'Archivo Narrow', sans-serif;
   font-size: 1.4em;
   display: block;
@@ -179,7 +174,7 @@ footer a {
 }
 footer a:hover,
 footer a:focus {
-  color: #FF7148;
+  color: #ff0000;
   text-decoration: none;
 }
 
