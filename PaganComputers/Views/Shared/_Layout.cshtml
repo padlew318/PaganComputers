@@ -8,7 +8,6 @@
     @Scripts.Render("~/bundles/modernizr")
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
 </head>
 <body>
     <div class="navbar navbar-inverse">
@@ -58,50 +57,31 @@
     <footer>
         <div class="footer">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-lg-push-4 text-center">
-                        <!-- Regional Name -->
-                        <span class="regional">b4tech</span>
-                        <!-- END Regional Name -->
-                        <p>&copy; @DateTime.Now.Year</p>
-                    </div>
-                    <div class="col-lg-2 col-lg-pull-4 col-md-3 col-sm-6">
+                <div class="row text-center">
+                    <div class="col-lg-4 col-md-3 col-sm-6">
                         <span class="title">Are you lost?</span>
                         <nav>
                             <ul>
-                                <li><a href="home/" title="Home">Home</a></li>
-                                <li><a href="tutorials/" title="Tutorials">Tutorials</a></li>
+                                <li><i class="fa fa-home fa-fw"></i> @Html.ActionLink("Home", "Index", "Home")</li>
+                                <li><i class="fa fa-book fa-fw"></i> @Html.ActionLink("Tutorials", "Index", "Tutorials")</li>
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-lg-2 col-lg-pull-4 col-md-3 col-sm-6">
-                        <span class="title">Tutorials</span>
-                        <nav>
-                            <ul>
-                                <li><a href="Tutorials/VM" title="Virtual machines">Virtual machines</a></li>
-                                <li><a href="Tutorials/Linux" title="Linux">Linux</a></li>
-                                <li><a href="Tutorials/Git" title="GIT">Git</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="col-lg-4 col-md-3 col-sm-6">
                         <span class="title">I'm social</span>
                         <!-- Social Links -->
                         <ul class="socialLinks">
-                            <li><a href="https://www.facebook.com/padlew318" title=""><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#" title=""><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="https://twitter.com/Padlew318" title=""><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" title=""><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#" title=""><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#" title=""><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="#" title=""><i class="fa fa-skype"></i></a></li>
-                            <li><a href="#" title=""><i class="fa fa-whatsapp"></i></a></li>
-
-
+                            <li><a href="https://www.facebook.com/padlew318" title=""><i class="fa fa-facebook fa-2x"></i></a></li>
+                            <li><a href="https://twitter.com/Padlew318" title=""><i class="fa fa-twitter fa-2x"></i></a></li>
+                            <li><a href="#" title=""><i class="fa fa-linkedin fa-2x"></i></a></li>
+                            <li><a href="#" title=""><i class="fa fa-google-plus fa-2x"></i></a></li>
+                            <li><a href="#" title=""><i class="fa fa-skype fa-2x"></i></a></li>
+                            <li><a href="#" title=""><i class="fa fa-whatsapp fa-2x"></i></a></li>
+                            <li><a href="https://github.com/padlew318/" title=""><i class="fa fa-github fa-2x"></i></a></li>
                         </ul>
                         <!-- END Social Links -->
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="col-lg-4 col-md-3 col-sm-6">
                         <span class="title">Contact me</span>
                         <address>
                             <!-- Regional Showroom Address -->
@@ -111,6 +91,11 @@
                             </p>
                             <!-- END Regional Showroom Address -->
                         </address>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                            <span class="regional">b4tech &copy; @DateTime.Now.Year</span> 
                     </div>
                 </div>
             </div>
